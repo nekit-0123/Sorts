@@ -227,12 +227,11 @@ public:
                 i++;
                 j--;
             }
-
-            if (j > 0)
-                QuickSort(array, j);
-            if (size > i)
-                QuickSort(array + i, size - i);
         }
+        if (j > 0)
+            QuickSort(array, j);
+        if (size > i)
+            QuickSort(array + i, size - i); 
     }
 
 /* Case
